@@ -9,10 +9,49 @@ package jp.ac.uryukyu.ie.e245715;
  * Created by tnal on 2016/11/13.
  */
 public class Enemy {
-    public String name;
-    public int hitPoint;
-    public int attack;
-    public boolean dead;
+    private String name;
+    private int hitPoint;
+    private int attack;
+    private boolean dead;
+
+    //getterメソッド：nameを取得する
+    public String getName(){
+        return name;
+    }
+    // setter メソッド: name を設定する
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    //getterメソッド：hitPointを取得する
+    public int getHitPoint(){
+        return hitPoint;
+    }
+
+    // setter メソッド: hitPointを設定する
+    public void setHitPoint(int hitPoint){
+        this.hitPoint = hitPoint;
+    }
+
+    //getterメソッド：attackを取得する
+    public int getAttack(){
+        return attack;
+    }
+
+    // setter メソッド: attack を設定する
+    public void setAttack(int attack) {
+        this.attack = attack;
+    }
+
+    //getterメソッド：deadを取得する
+    public boolean getDead(){
+        return dead;
+    }
+
+    // setter メソッド: dead を設定する
+    public void setDead(boolean dead) {
+        this.dead = dead;
+    }
 
     /**
      * コンストラクタ。名前、最大HP、攻撃力を指定する。
@@ -42,7 +81,7 @@ public class Enemy {
         }else{
             //上記が偽である時(=enemyが生存している)に実行されるコード
             int damage = (int)(Math.random() * attack);
-        System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, hero.name, damage);
+        System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, hero.getName(), damage);
         hero.wounded(damage);
         }
         
