@@ -17,24 +17,29 @@ class LivingThing {
         System.out.printf("%sのHPは%d。攻撃力は%dです。\n", name, maximumHP, attack);
     }
 
-    //①deadの getter method
+    //deadの getter method
     public boolean isDead(){
         return dead;
 
     }
 
-    //②nameのgetterメソッド、勇者またはスライムのnameを取得する
+    //nameのgetterメソッド、勇者またはスライムのnameを取得する
     public String getName(){
         return name;
     }
 
-    //③hitPointのgetter method
+    //hitPointのgetter method
     public int getHitPoint() {
         return hitPoint;
     }
 
+    //attackのgetter method
+    public int getAttack(){
+        return attack;
+    }
 
-    //④勇者からスライム、またはスライムから勇者に攻撃するメソッド
+
+    //勇者からスライム、またはスライムから勇者に攻撃するメソッド
     public void attack(LivingThing opponent){
 
         //相手に倒された時に実行される
@@ -51,7 +56,7 @@ class LivingThing {
         
     }
 
-    //⑤自身が攻撃された時のダメージを処理するメソッド
+    //自身が攻撃された時のダメージを処理するメソッド
     public void wounded(int damage){
         hitPoint -= damage;
 
@@ -61,4 +66,6 @@ class LivingThing {
         }
 
     }
+
+    
 }

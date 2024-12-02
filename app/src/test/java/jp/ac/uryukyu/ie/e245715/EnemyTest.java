@@ -3,6 +3,7 @@ package jp.ac.uryukyu.ie.e245715;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+
 class EnemyTest {
     /**
      * 倒れたはずの敵は攻撃できないことを検証。
