@@ -8,7 +8,7 @@ public class Main {
         System.out.printf("%s vs. %s\n", hero.getName(), enemy.getName());
 
         int turn = 0;
-        while( hero.getDead() == false && enemy.getDead() == false ){//勇者とスライム両方とも死んでいない時、ループする
+        while( hero.isDead() == false && enemy.isDead() == false ){//勇者とスライム両方とも死んでいない時、ループする
             turn++;
             System.out.printf("%dターン目開始！\n", turn);
             hero.attack(enemy);
