@@ -2,6 +2,8 @@ import jp.ac.uryukyu.ie.e245715.*;
 
 public class Main {
     public static void main(String[] args){
+
+        //インスタンス化
         Warrior warrior = new Warrior("勇者", 10, 5);
         Enemy enemy = new Enemy("スライム", 6, 3);
 

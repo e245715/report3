@@ -9,7 +9,7 @@ package jp.ac.uryukyu.ie.e245715;
  * Created by tnal on 2016/11/13.
  */
 public class Enemy extends LivingThing {
-    /*private String name;
+    private String name;
     private int hitPoint;
     private int attack;
     private boolean dead;
@@ -22,8 +22,6 @@ public class Enemy extends LivingThing {
     public void setName(String name) {
         this.name = name;
     }
-    
-    
 
     //getterメソッド：hitPointを取得する
     public int getHitPoint(){
@@ -55,7 +53,7 @@ public class Enemy extends LivingThing {
         this.dead = dead;
     }
 
-    */
+    
 
     /**
      * コンストラクタ。名前、最大HP、攻撃力を指定する。
@@ -71,8 +69,8 @@ public class Enemy extends LivingThing {
         //System.out.printf("%sのHPは%d。攻撃力は%dです。\n", name, maximumHP, attack);
     }
 
-    /**
-     * Heroへ攻撃するメソッド。
+    
+     /* Heroへ攻撃するメソッド。
      * attackに応じて乱数でダメージを算出し、hero.wounded()によりダメージ処理を実行。
      * @param hero 攻撃対象
      
@@ -89,7 +87,7 @@ public class Enemy extends LivingThing {
         hero.wounded(damage);
         }
         
-    }*/
+    }
 
     /**
      * 自身へ攻撃されたときのダメージ処理をするメソッド。
